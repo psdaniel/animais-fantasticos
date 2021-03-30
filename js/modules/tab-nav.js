@@ -1,4 +1,4 @@
-export default function initTabNav () {
+export default function initTabNav() {
   const tabMenu = document.querySelectorAll('[data-tab="menu"] li');
   const tabContent = document.querySelectorAll('[data-tab="content"] section');
   const activeStatus = 'ativo';
@@ -6,7 +6,7 @@ export default function initTabNav () {
   if (tabContent.length && tabMenu.length) {
     tabContent[0].classList.add(activeStatus);
 
-    const activeTab = (index) =>  {
+    const activeTab = (index) => {
       tabContent.forEach((section) => {
         section.classList.remove(activeStatus);
       });
@@ -19,5 +19,5 @@ export default function initTabNav () {
         activeTab(index);
       });
     });
-  };
-};
+  }
+}

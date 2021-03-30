@@ -1,4 +1,4 @@
-export default function initScrollSuave () {
+export default function initScrollSuave() {
   const linksInternos = document.querySelectorAll('[data-menu="suave"] a[href^="#"]');
 
   const scrollToSection = (event) => {
@@ -7,11 +7,11 @@ export default function initScrollSuave () {
     const section = document.querySelector(href);
 
     // forma alternativa
-    //const topo = section.offsetTop;
-    //window.scrollTo({
-     // top: topo,
-     // behavior: 'smooth',
-    //})
+    // const topo = section.offsetTop;
+    // window.scrollTo({
+    // top: topo,
+    // behavior: 'smooth',
+    // })
 
     section.scrollIntoView({
       behavior: 'smooth',
@@ -22,4 +22,4 @@ export default function initScrollSuave () {
   linksInternos.forEach((link) => {
     link.addEventListener('click', scrollToSection);
   });
-};
+}

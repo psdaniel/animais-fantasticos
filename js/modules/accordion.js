@@ -1,4 +1,4 @@
-export default function initAccordion ()  {
+export default function initAccordion() {
   const accordionList = document.querySelectorAll('[data-anime="accordion"] dt');
   const activeStatus = 'ativo';
 
@@ -14,5 +14,5 @@ export default function initAccordion ()  {
     accordionList.forEach((item) => {
       item.addEventListener('click', activeAccordion);
     });
-  };
-};
+  }
+}
